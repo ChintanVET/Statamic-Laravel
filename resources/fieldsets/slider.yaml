@@ -1,0 +1,30 @@
+title: Slider
+fields:
+  -
+    handle: slides
+    field:
+      type: replicator
+      display: Slides
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            slide:
+              display: Slide
+              fields:
+                -
+                  handle: slide_image
+                  field:
+                    container: assets
+                    type: assets
+                    display: 'Slide Image'
+                -
+                  handle: slide_heading
+                  field:
+                    type: text
+                    display: 'Slide heading'
+                -
+                  handle: slide_content
+                  field:
+                    type: textarea
+                    display: 'Slide Content'

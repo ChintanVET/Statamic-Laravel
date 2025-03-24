@@ -1,0 +1,51 @@
+title: cards
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+          -
+            handle: card
+            field:
+              type: replicator
+              display: Cards
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: card_heading
+                          field:
+                            type: text
+                            display: 'Card Heading'
+                        -
+                          handle: card_content
+                          field:
+                            type: textarea
+                            display: 'Card Content'
+                        -
+                          handle: image
+                          field:
+                            container: assets
+                            type: assets
+                            display: Image
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
